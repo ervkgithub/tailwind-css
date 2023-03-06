@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tail wind css demo</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+  </head>
+  <body>
+    <!--Header -->
+    <header>
+      <div class="flex justify-center">
+        <nav class="self-center w-full">
+          <div class="flex flex-col lg:flex-row justify-around items-center">
+            <h1 class="uppercase pl-5 py-4 text-lg font-sans font-bold">
+              TailWind CSS DEMO
+            </h1>
+            <ul
+              class="hidden lg:flex items-center text-[18px] font-semibold pl-32"
+            >
+              <li
+                class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"
+              >
+                <a href="#">Services</a>
+              </li>
+              <li
+                class="hover:underline underline-offset-4 decoration-2 decoration-white py-2 rounded-lg px-5"
+              >
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="text-center text-base pr-5 inline-flex">
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Main -->
+    <main>
+      <div class="container mx-auto">
+        <h1 class="text-xl">Flex</h1>
+        <div class="bg-green-400 mt-3">
+          <div class="flex gap-8 flex-col sm:flex-row">
+            <div
+              class="flex-initial font-sans bg-indigo-600 w-40 h-40 text-center text-gray-300 text-lg"
+            >
+              Flex 1
+            </div>
+            <div
+              class="flex-initial font-sans bg-indigo-600 w-40 h-40 text-center text-gray-300 text-lg"
+            >
+              Flex 2
+            </div>
+            <div
+              class="flex-initial font-sans bg-indigo-600 w-40 h-40 text-center text-gray-300 text-lg"
+            >
+              Flex 3
+            </div>
+          </div>
+        </div>
+        <div class="bg-yellow-300 mt-5 mb-3">
+          <div class="flex gap-8 flex-wrap-reverse">
+            <div
+              class="flex-initial font-sans bg-gray-300 w-40 h-40 text-center text-black-300 text-lg"
+            >
+              Flex 1
+            </div>
+            <div
+              class="flex-initial font-sans bg-gray-300 w-40 h-40 text-center text-black-300 text-lg"
+            >
+              Flex 2
+            </div>
+            <div
+              class="flex-initial font-sans bg-gray-300 w-40 h-40 text-center text-black-300 text-lg"
+            >
+              Flex 3
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-xl">Grid</h1>
+        <div class="bg-purple-500 mt-5">
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="flex-initial font-sans bg-green-600 w-full h-40 text-center text-white text-lg"
+            >
+              Grid 1
+            </div>
+            <div
+              class="flex-initial font-sans bg-green-600 w-full h-40 text-center text-white text-lg"
+            >
+              Grid 2
+            </div>
+            <div
+              class="flex-initial font-sans bg-green-600 w-full h-40 text-center text-white text-lg"
+            >
+              Grid 3
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-xl mt-5 mb-3">Utility Classes repeating solution with @apply</h1>
+        
+        <div class="flex">
+            <button class="py-2 px-4 font-semibold bg-black text-white">Black Button</button>
+            <button class="py-2 px-4 font-semibold bg-blue-500 text-white">Blue Button</button>
+        </div>
+
+        <div class="flex mt-5">
+            <button class="btn btn-black">Black Button</button>
+            <button class="btn btn-blue">Blue Button</button>
+        </div>
+
+        <h1 class="text-xl mt-5 mb-3">Directive to override base css @base using  @layer base</h1>
+
+        <a href="#">Anchor tag</a>
+
+        <h1 class="text-xl mt-5 mb-3">Directive to override components css @components @layer using components </h1>
+
+        <button class="btn-purple">Button Purple</button>
+
+        <h1 class="text-xl mt-5 mb-3">Directive to override utilities css @utilities @layer using utilities </h1>
+
+        <div class="bg-blue-300 text-white text-center h-40 align-middle hover:p-21">
+            Variant text
+        </div>
+
+        <h1 class="text-xl mt-5 mb-3">Screen & Themes Function </h1>
+
+        <div class="content-area bg-gray-400">
+            Content Area
+        </div>
+
+        <h1 class="text-xl mt-5 mb-3">Advanced with JIT Compiler</h1>
+        <button class="h-4">Button</button>
+        <button class="h-[35px]">Button 1</button>
+        <button class="bg-[#1da1f1]">Button 2</button>
+        <button class="font-bold !font-medium">Button 2 aplly !imprtant</button>
+
+        <h1 class="text-xl mt-5 mb-3">Themes & Colors </h1>
+
+        <button class="bg-black text-white">Button 2 aplly !imprtant</button>
+
+        <h1 class="text-xl mt-5 mb-3">Advanced Extend Feature</h1>
+
+        <button class="bg-black 3xl:text-white">Button 2 </button>
+
+        <h1 class="text-xl mt-5 mb-3">Advanced Variants Feature</h1>
+
+        <button class="bg-black visited:bg-red-400">Button 2 </button>
+
+        <h1 class="text-xl mt-5 mb-3">Advanced Plugin Feature</h1>
+
+        <div class="new-btn">New button</div>
+
+      </div><!--Container End -->
+    </main><!--Main End -->
+
+    <!--Footer -->
+    <footer>
+      <div class="flex items-center justify-center mt-5">
+        <div class="m-2 max-w-5xl items-center">
+          <div class="flex flex-col items-center">
+            <div class="text-center text-base pr-5 inline-flex">
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="flex md:flex-row flex-col">
+              <p class="hover:text-blue-600 text-gray-500 font-medium m-2">
+                <a href="#">Home</a>
+              </p>
+              <p class="hover:text-blue-600 text-gray-500 font-medium m-2">
+                <a href="#">About us </a>
+              </p>
+              <p class="hover:text-blue-600 text-gray-500 font-medium m-2">
+                <a href="#">Services </a>
+              </p>
+              <p class="hover:text-blue-600 text-gray-500 font-medium m-2">
+                <a href="#">Contact Us </a>
+              </p>
+            </div>
+            <div class="text-gray-500 font-medium mt-4 text-xs">
+              Copyright 2023. All rights reserved by
+              <a href="#" class="text-blue-600">@Learning</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

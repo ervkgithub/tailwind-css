@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* To fix repeating of the utility class, write new class and use apply for this */
+
+.btn {
+  @apply py-2 px-4 font-semibold text-white;
+}
+
+.btn-blue {
+  @apply bg-blue-500;
+}
+
+.btn-black {
+  @apply bg-black hover:bg-red-400;
+}
+
+/* To fix override base css of tailwind use layer directives */
+
+@layer base {
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+/* To fix override component css of tailwind use layer directives */
+
+@layer components {
+  .btn-purple {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded underline;
+  }
+}
+
+/* To fix override utilities css of tailwind use layer directives */
+
+@layer utilities {
+  .p-21 {
+    padding: 5.5rem;
+  }
+  @variants hover, focus {
+    .p-21 {
+      padding: 5.5rem;
+    }
+  }
+  @responsive{
+    .rotate-10{
+        transform:rotate(-10deg);
+    }
+  }
+}
+
+/* Screen and Theme Functions */
+
+/* Screen */
+
+@screen sm{
+    .rotate-10{
+        transform:rotate(-10deg);
+    }
+}
+
+/* Theme */
+
+.content-area{
+    height: 3.5rem;
+}
+
+.content-area{
+    height: theme('height.32');
+}
+
+.content-area{
+    height: theme('spacing.1');
+}
+
+.new-btn{
+    @apply scale-1 rotate-1
+}
